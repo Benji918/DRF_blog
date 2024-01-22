@@ -128,6 +128,16 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # Custom project settings
+
+# DJOSER SETTINGS
+DJOSER = {
+    'SERIALIZERS': {
+        'user_create': 'users.serializers.UserCreateSerializer',
+        'current_user': 'users.serializers.CurrentUserSerializer'
+    }
+}
+
+# RESTFRAMEWORK SETTINGS
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
