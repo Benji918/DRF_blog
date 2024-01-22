@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from .permissions import IsOwnerOfStudent
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
@@ -11,7 +11,7 @@ class BlogViewSets(viewsets.ModelViewSet):
     queryset = BlogPost.objects.all()
     serializer_class = BlogSerializer
     authentication_classes = [JWTAuthentication]
-    permission_classes = [IsAuthenticated, ]
+    permission_classes = [IsAuthenticated, IsOwnerOfStudent]
 
     def get_queryset(self):
         """Return only Blog objects for the request user"""
