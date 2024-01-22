@@ -27,3 +27,20 @@ class CustomUser(AbstractUser):
 
     def __str__(self):
         return self.email
+
+
+class BlogPost(models.Model):
+    id = models.UUIDField(
+        primary_key=True,
+        default=uuid.uuid4,
+        editable=False,
+        unique=True
+    )
+    title = models.CharField(max_length=100, null=False, blank=False)
+    content = models.TextField(null=False, blank=False)
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.title
