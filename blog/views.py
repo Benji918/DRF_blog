@@ -20,3 +20,5 @@ class BlogViewSets(viewsets.ModelViewSet):
     def perform_create(self, serializer):
         """Create a new Blogs for specific authenticated user"""
         return serializer.save(user=self.request.user)
+
+    
