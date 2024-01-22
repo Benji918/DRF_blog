@@ -153,4 +153,13 @@ SIMPLE_JWT = {
 
 AUTH_USER_MODEL = 'core.CustomUser'
 
-
+# API Docs settings
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Blog API',
+    'DESCRIPTION': 'Blog  project API Documents',
+    'VERSION': '1.0.0',
+    'SCHEMA_PATH_PREFIX': '/backend/api/*',
+    # 'SERVE_PERMISSIONS': ['rest_framework.permissions.IsAuthenticated'],
+    'DISABLE_ERRORS_AND_WARNINGS': True,
+    'COMPONENT_SPLIT_REQUEST': True
+}

@@ -9,3 +9,4 @@ class UserCreateSerializer(BaseUserSerializer):
 class CurrentUserSerializer(UserSerializer):
     class Meta(UserSerializer.Meta):
         fields = ['id', 'email', 'username', 'password']
+
