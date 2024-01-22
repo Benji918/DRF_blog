@@ -3,7 +3,7 @@ from .views import BlogViewSets
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
-router.register('blog', BlogViewSets)
+router.register('user', BlogViewSets)
 
 app_name = 'blogs'
 
