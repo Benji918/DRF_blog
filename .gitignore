@@ -1,5 +1,5 @@
 /venv
 /.idea
-DRF_blog/users/__pycache__/
+app/DRF_blog/users/__pycache__/
 db.sqlite3
-DRF_blog/blog/__pycache__/
+app/DRF_blog/blog/__pycache__/

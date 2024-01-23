@@ -1,10 +1,9 @@
 from .permissions import IsOwnerOfStudent
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework.permissions import IsAuthenticated
-from rest_framework.response import Response
 from .serializers import BlogSerializer
-from core.models import BlogPost, CustomUser
-from rest_framework import viewsets, status
+from app.core.models import BlogPost
+from rest_framework import viewsets
 
 
 class BlogViewSets(viewsets.ModelViewSet):
