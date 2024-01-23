@@ -72,7 +72,6 @@ This project is a RESTful API for a blogging platform built using Django and Dja
    ```env
    DEBUG=True
    SECRET_KEY=your_secret_key
-   DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]
    ```
 
    Replace `your_secret_key` with a secure random key.
