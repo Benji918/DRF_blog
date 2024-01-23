@@ -1,0 +1,28 @@
+name: Checks
+
+on:
+  # Triggered based on the git event type
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  test:
+    name: Run project tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Setup Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Install requirements
+        run: |
+          pip install -r requirements.txt
+      - name: Run tests
+        run: |
+          python manage.py test
