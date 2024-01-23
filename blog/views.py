@@ -2,7 +2,7 @@ from .permissions import IsOwnerOfStudent
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework.permissions import IsAuthenticated
 from .serializers import BlogSerializer
-from app.core.models import BlogPost
+from core.models import BlogPost
 from rest_framework import viewsets
 
 
