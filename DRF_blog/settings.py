@@ -34,7 +34,7 @@ DEBUG = env('DEBUG')
 
 POSTGRES_DB_URL = env('POSTGRES_URL')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
