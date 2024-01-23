@@ -3,7 +3,10 @@
 This project is a RESTful API for a blogging platform built using Django and Django Rest Framework. The API includes user authentication and authorization, allowing users to register, log in, and perform actions like creating, reading, updating, and deleting blog posts.
 
 ## ER diagram
-![](https://github.com/Benji918/DRF_blog/blob/master/Blog%20ER%20diagram.png)
+![](https://github.com/Benji918/DRF_blog/blob/master/Blog%20ER%20diagram.png)  
+
+## Architectural Diagram
+![](https://github.com/Benji918/DRF_blog/blob/master/Blank%20diagram.jpeg)   
 
 
 ## Table of Contents
