@@ -90,9 +90,7 @@ class PrivateUserApiTests(TestCase):
         self.assertEqual(res.status_code, status.HTTP_200_OK)
         self.assertEqual(get_user_model().objects.count(), 1)
 
-
     def test_user_delete(self):
         """Testing user delete"""
         res = self.client.delete('/auth/users/me', follow=True, format='json')
         self.assertEqual(res.status_code, status.HTTP_200_OK)
-
