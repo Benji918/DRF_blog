@@ -4,7 +4,7 @@ This project is a RESTful API for a blogging platform built using Django and Dja
 
 ## ER diagram
 # link -> https://dbdiagram.io/d/Blog-ER-diagram-65af9780ac844320ae86219c
-![](https://github.com/Benji918/DRF_blog/blob/master/Blog%20ER%20diagram.png)  
+![](https://github.com/Benji918/DRF_blog/blob/master/Blog%20ER%20diagram%20(1).png)  
 
 ## Architectural Diagram
 ![](https://github.com/Benji918/DRF_blog/blob/master/Blank%20diagram.jpeg)   
