@@ -20,4 +20,8 @@ class BlogViewSets(viewsets.ModelViewSet):
         """Create a new Blogs for specific authenticated user"""
         return serializer.save(user=self.request.user)
 
+    def perform_update(self, serializer):
+        """Update an existing Blog for the specific authenticated user"""
+        serializer.save(user=self.request.user)
+
     
