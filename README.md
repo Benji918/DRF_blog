@@ -44,14 +44,14 @@ This project is a RESTful API for a blogging platform built using Django and Dja
 
 - Django
 - Django Rest Framework
-- Docker
+
 
 ## Getting Started
 
 ### Prerequisites
 
-- [Docker](https://docs.docker.com/get-docker/)
-- [Docker Compose](https://docs.docker.com/compose/install/)
+- Python
+- Django
 
 ### Installation
 
@@ -72,20 +72,22 @@ This project is a RESTful API for a blogging platform built using Django and Dja
    ```env
    DEBUG=True
    SECRET_KEY=your_secret_key
-   DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]
    ```
 
    Replace `your_secret_key` with a secure random key.
 
-4. Build and run the Docker containers:
+4. Install project dependencies:
 
    ```bash
-   docker-compose up --build
+   pip install -r requirements.txt
    ```
 
-   This will start the Django development server and the required services.
+5. Run project:
+   ```bash
+   py manage.py runserver
+   ```
 
-5. Access the API at [http://127.0.0.1:8000/].
+5. Access the API at [https://drfblog-production.up.railway.app/api/schema/swagger/#/blog/blog_user_update].
 
 ## Usage
 
@@ -132,13 +134,5 @@ Authorization: JWT your_jwt_token
 
 Authorization is implemented to ensure that only authenticated users can perform actions like creating, updating, and deleting blog posts. The API uses a custom permission class (`IsOwnerOrReadOnly`) to determine if the requesting user is the owner of the blog post.
 
-## Docker
 
-The project uses Docker for containerization. Docker Compose is configured to set up the Django development server and required services. This makes it easy to manage dependencies and deploy the application consistently.
-
-To stop the containers:
-
-```bash
-docker-compose down
-```
 
