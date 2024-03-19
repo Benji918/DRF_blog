@@ -24,4 +24,4 @@ class BlogViewSets(viewsets.ModelViewSet):
         """Update an existing Blog for the specific authenticated user"""
         serializer.save(user=self.request.user)
 
-    
+
