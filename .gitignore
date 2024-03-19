@@ -4,3 +4,7 @@ DRF_blog/users/__pycache__/
 db.sqlite3
 DRF_blog/blog/__pycache__/
 DRF_blog/.env
+DRF_blog/__pycache__/
+users/__pycache__/
+core/__pycache__/
+blog/__pycache__/
