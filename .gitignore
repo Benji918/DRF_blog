@@ -7,4 +7,5 @@ DRF_blog/.env
 DRF_blog/__pycache__/
 users/__pycache__/
 core/__pycache__/
+core/migrations/
 blog/__pycache__/
